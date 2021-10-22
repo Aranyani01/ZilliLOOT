@@ -1,4 +1,5 @@
 ZillaLootNFT: Adventure Gear on Zilliqa Network
+
 Loot is randomized adventurer gear generated and stored on chain. Stats, images, and other functionality are intentionally omitted for others to interpret. Feel free to use Loot in any way you want. The first batch of loot was minted on the NEAR blockchain testnet with the following info To see the transaction in the transaction explorer, please open this url in your browser
 # ZRC
 The Zilliqa Reference Contracts (ZRCs) are the contract standards for the Zilliqa platform.
