@@ -4,12 +4,15 @@ ZilliLoot is a unique and randomized adventurer gear generated and stored on cha
  
 Three lists have been added: "items" , "descriptors" , "descriptors2" with 24 items each. These descriptors can be used   to create unique randomized gear for each person minting an nft using 
 
-24*24*24 = 13,824 unique items of a adventure gear can be minted using just this one contract!
+24x24x24 = 13,824 unique items of a adventure gear can be minted using just this one contract!
 Some of the unique never seen before NFTs that can be minted using this contract includes: 
 
 *inevitable ice axe of the righteous surging*
+
 *guardian gecko with invisible path to glory*
+
 *treacherous helmet of evolved zombies*
+
 *hippie pyromancer at the edge of reality*
 
 These serve as great imagination starting point for multiple metaverses that we expect will be built using these adventure gear.
