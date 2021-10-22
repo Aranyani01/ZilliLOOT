@@ -2,7 +2,7 @@
 
 ZilliLoot is a unique and randomized adventurer gear generated and stored on chain. Stats, images, and other functionality are intentionally omitted for others to interpret. This is a text based adventure which would serve the basis of the original video game. Feel free to use ZilliLoot in any way you want. 
  
-Three lists have been added: "items" , "descriptors" , "descriptors2" with 24 items each. These descriptors can be used   to create unique randomized gear for each person minting an nft using 
+Three lists have been added: "items" , "descriptors" , "descriptors2" with 24 items each. These descriptors can be used   to create unique randomized gear for each person minting an nft. This enables every person to carry their unique apparel to many games and virtual realities.
 
 24x24x24 = 13,824 unique items of a adventure gear can be minted using just this one contract!
 Some of the unique never seen before NFTs that can be minted using this contract includes: 
