@@ -376,11 +376,10 @@ transition ConfigureMinter(minter: ByStr20)
   end
 end
 
-procedure Minting(input_pair: Pair ByStr20 String)
+(* accepts random seed between 1-24 to mint the adventure gear *)
+procedure Minting(input_pair: Pair ByStr20 String, random_seed: Uint128)
   to = let fst_string_bystr20 = @fst ByStr20 String in
     fst_string_bystr20 input_pair;
-  token_uri = let snd_string_bystr20 = @snd ByStr20 String in
-    snd_string_bystr20 input_pair;
   IsMinter _sender;
   (* Add to owner count *)
   UpdateTokenCount add_operation to;
@@ -396,7 +395,12 @@ procedure Minting(input_pair: Pair ByStr20 String)
   IsTokenNotFound token_id;
   (* Mint new non-fungible token *)
   token_owners[token_id] := to;
-  (* Add token_uri for token_id *)
+  (* Add token_uri for specific Adventure gear*)
+  item <- items[random_seed];
+  descriptor <- descriptor[random_seed];
+  descriptor2 <- descriptor2[random_seed];
+  Gear = descriptor + descriptor2 + item
+  token_uri = Gear;
   token_uris[token_id] := token_uri;
   e = {_eventname: "MintSuccess"; by: _sender; recipient: to;
         token_id: token_id; token_uri: token_uri};
@@ -406,9 +410,9 @@ end
 (* @dev:    Mint new tokens. Only minters can mint.           *)
 (* @param:  to        - Address of the token recipient        *)
 (* @param:  token_uri - URI of the the new token to be minted *)
-transition Mint(to: ByStr20, token_uri: String)
+transition Mint(to: ByStr20, token_uri: String, random_seed: Uint128)
   input_pair = build_pair to token_uri;
-  Minting input_pair;
+  Minting input_pair, random_seed;
   token_id <- token_id_count;
   msg_to_recipient = { _tag : "RecipientAcceptMint"; _recipient : to; _amount : Uint128 0 };
   msg_to_sender = { _tag : "MintCallBack"; _recipient : _sender; _amount : Uint128 0;
