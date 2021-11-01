@@ -41,7 +41,8 @@ To make this possible we have modified nft minting procedure as well as transiti
 
 
 
-
+#Contact info:
+email ID: senatrasilver@gmail.com
 
 
 
